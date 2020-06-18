@@ -109,8 +109,8 @@ def main():
                             for i_y in range(args.img_ratio):
                                 img_edge.putpixel(
                                     (x * args.img_ratio + i_x,
-                                        y * args.img_ratio + i_y),
-                                    getEdgeColour(pos, args.img_colour_map))
+                                        y * args.img_ratio + i_y), 255)
+                                    #getEdgeColour(pos, args.img_colour_map))
         else:
             print('Warning: OpenCL Kirsch Operator Kernel is not implemented yet.')
             # with open('kirsch_accel.cl', 'r') as cl_code_file:
