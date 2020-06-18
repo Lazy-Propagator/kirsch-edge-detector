@@ -27,7 +27,7 @@ aparser.add_argument('-a', '--accel-gpu', dest='accel_gpu', default=False,
     action='store_true',
     help='enable GPU acceleration through OpenCL')
 aparser.add_argument('-c', '--colour', dest='img_colour_map',
-    choices=('mono', 'sim', 'fpga'), default='sim', type=str,
+    choices=('mono', 'sim', 'fpga'), default='mono', type=str,
     help='select the output edge colour mapping, \'sim\' and \'fpga\' are ' \
         'the ECE 327 colour mappings (default: sim)')
 aparser.add_argument('-t', '--threshold', dest='threshold',
