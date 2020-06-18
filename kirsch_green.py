@@ -81,7 +81,8 @@ def main():
                  img_grey.height * args.img_ratio),
                 bg_colour)
         
-        r, img_edge, b = img_edg.split()
+        #r, img_edge, b = img_edg.split()
+        img_edge = img_edg.getchannel(1)
         
         if not(args.accel_gpu):            
             for y in range(1, img_grey.height - 1):
